@@ -1,0 +1,12 @@
+export { CoverSlide } from './CoverSlide';
+export { ProductPromiseSlide } from './ProductPromiseSlide';
+export { GlobalMarketSlide } from './GlobalMarketSlide';
+export { BusinessModelSlide } from './BusinessModelSlide';
+export { PricingSlide } from './PricingSlide';
+export { TractionSlide } from './TractionSlide';
+export { DemosSlide } from './DemosSlide';
+export { TeamSlide } from './TeamSlide';
+export { DifferentiatorSlide } from './DifferentiatorSlide';
+export { FundraisingSlide } from './FundraisingSlide';
+export { ProductRoadmapSlide } from './ProductRoadmapSlide';
+export { ContactSlide } from './ContactSlide';
