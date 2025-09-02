@@ -103,7 +103,7 @@ export function ContactSlide({
           </Card>
           
           <div className="pt-6 text-white/70">
-            <p className="text-base">CODEWRX, CO. • August 2025 • Confidential</p>
+            <p className="text-base">CODEWRX, CO. • September 2025 • Confidential</p>
           </div>
         </div>
       </div>
