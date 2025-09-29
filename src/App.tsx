@@ -237,13 +237,13 @@ export default function CODEWRXInvestorPitch() {
       <main className="pt-24">
         {/* Slide Content - 3:2 Aspect Ratio Container */}
         <div className="max-w-6xl mx-auto px-6 py-8">
-          <div className={`aspect-[3/2] sm:aspect-[3/2] md:aspect-[3/2] lg:aspect-[3/2] xl:aspect-[3/2] p-8 rounded-2xl ${getSlideBackground(currentSlideData.id)}`}>
+          <div className={`aspect-[3/2] p-8 rounded-2xl slide-container ${getSlideBackground(currentSlideData.id)}`}>
             <CurrentSlideComponent {...getSlideProps()} />
           </div>
         </div>
 
         {/* Navigation Controls */}
-        <div className="max-w-6xl mx-auto px-6 py-6">
+        <div className="max-w-6xl mx-auto px-6 py-6 navigation-controls">
           <div className="flex items-center justify-between">
             <Button 
               variant="outline" 
@@ -278,7 +278,7 @@ export default function CODEWRXInvestorPitch() {
         </div>
 
         {/* Slide Indicators */}
-        <div className="max-w-6xl mx-auto px-6 pb-12">
+        <div className="max-w-6xl mx-auto px-6 pb-12 slide-indicators">
           <div className="flex justify-center gap-2">
             {slides.map((_, index) => (
               <button
