@@ -24,7 +24,7 @@ export function ProblemSlide() {
       </div>
       
       {/* Main Content Split */}
-      <div className="flex-1 grid grid-cols-3 gap-6">
+      <div className="flex-1 grid grid-cols-3 gap-6 mobile-grid-1">
         {/* Left Column - Current Web Games */}
         <Card className="codewrx-card p-6 space-y-4">
           <div className="flex items-center gap-3">

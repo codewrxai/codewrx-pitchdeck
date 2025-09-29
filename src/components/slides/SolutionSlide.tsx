@@ -23,7 +23,7 @@ export function SolutionSlide() {
       </div>
       
       {/* Compact Main Hero Section */}
-      <div className="flex-1 grid grid-cols-5 gap-3">
+      <div className="flex-1 grid grid-cols-5 gap-3 mobile-grid-1">
         {/* Left Column - Game Conversion Flow */}
         <div className="col-span-2 space-y-4 h-full flex flex-col">
           <Card className="codewrx-card p-5 flex-1">

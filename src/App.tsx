@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Button } from "./components/ui/button";
 import { Separator } from "./components/ui/separator";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ImageWithFallback } from "./components/figma/ImageWithFallback";
+import cdwrxLogoSpin from "./assets/cdwrx-logo-spin.png";
 
 // Direct imports from individual files
 import { CoverSlide } from './components/slides/CoverSlide';
@@ -209,8 +211,12 @@ export default function CODEWRXInvestorPitch() {
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="w-10 h-10 codewrx-gradient rounded-xl flex items-center justify-center">
-                <div className="text-white font-bold text-lg">C</div>
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden">
+                <ImageWithFallback
+                  src={cdwrxLogoSpin}
+                  alt="CODEWRX Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex items-center space-x-2">
                 <div className="text-xl font-bold tracking-tight">
@@ -224,10 +230,6 @@ export default function CODEWRXInvestorPitch() {
               <span className="text-sm font-medium text-muted-foreground">
                 {currentSlide + 1} / {slides.length}
               </span>
-              <Separator orientation="vertical" className="h-4" />
-              <span className="text-sm font-medium text-foreground">
-                {currentSlideData.title}
-              </span>
             </div>
           </div>
         </div>
@@ -237,13 +239,13 @@ export default function CODEWRXInvestorPitch() {
       <main className="pt-24">
         {/* Slide Content - 3:2 Aspect Ratio Container */}
         <div className="max-w-6xl mx-auto px-6 py-8">
-          <div className={`aspect-[3/2] p-8 rounded-2xl ${getSlideBackground(currentSlideData.id)}`}>
+          <div className={`aspect-[3/2] p-8 rounded-2xl slide-container ${getSlideBackground(currentSlideData.id)}`}>
             <CurrentSlideComponent {...getSlideProps()} />
           </div>
         </div>
 
         {/* Navigation Controls */}
-        <div className="max-w-6xl mx-auto px-6 py-6">
+        <div className="max-w-6xl mx-auto px-6 py-6 navigation-controls">
           <div className="flex items-center justify-between">
             <Button 
               variant="outline" 
@@ -258,10 +260,6 @@ export default function CODEWRXInvestorPitch() {
             <div className="flex items-center gap-3 px-4 py-2 bg-background/50 backdrop-blur-sm rounded-lg border">
               <span className="text-sm font-medium text-muted-foreground">
                 {currentSlide + 1} / {slides.length}
-              </span>
-              <Separator orientation="vertical" className="h-4" />
-              <span className="text-sm font-medium text-foreground">
-                {currentSlideData.title}
               </span>
             </div>
             
@@ -278,7 +276,7 @@ export default function CODEWRXInvestorPitch() {
         </div>
 
         {/* Slide Indicators */}
-        <div className="max-w-6xl mx-auto px-6 pb-12">
+        <div className="max-w-6xl mx-auto px-6 pb-12 slide-indicators">
           <div className="flex justify-center gap-2">
             {slides.map((_, index) => (
               <button

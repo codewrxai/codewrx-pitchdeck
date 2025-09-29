@@ -116,7 +116,7 @@ export function PlatformFeesComparisonSlide() {
         </p>
       </div>
       
-      <div className="flex-1 grid grid-cols-3 gap-4">
+      <div className="flex-1 grid grid-cols-3 gap-4 mobile-single-column">
         {/* Left Column - CODEWRX Plans */}
         <div className="space-y-3">
           <div className="text-center">

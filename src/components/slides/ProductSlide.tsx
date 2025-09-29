@@ -119,7 +119,7 @@ export function ProductSlide() {
       </div>
       
       {/* Main Content */}
-      <div className="flex-1 grid grid-cols-3 gap-4">
+      <div className="flex-1 grid grid-cols-3 gap-4 mobile-grid-1">
         {/* Left Column - Platform Features + Payment + Value Prop */}
         <div className="space-y-3">
           <Card className="codewrx-card p-3">
@@ -204,7 +204,7 @@ export function ProductSlide() {
               </div>
               
               {/* 6 games in 3x2 grid */}
-              <div className="flex-1 grid grid-cols-3 gap-2">
+              <div className="flex-1 grid grid-cols-3 gap-2 mobile-grid-2">
                 {featuredGames.map((game, index) => (
                   <Card key={index} className="codewrx-card-ai overflow-hidden group hover:scale-105 transition-all duration-300">
                     <div className="relative">
