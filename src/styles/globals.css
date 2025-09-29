@@ -472,6 +472,28 @@ html {
     grid-template-columns: 1fr !important;
   }
   
+  /* Force single column for all grid layouts on mobile */
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Override specific grid layouts on mobile */
+  .grid.grid-cols-3,
+  .grid.grid-cols-4,
+  .grid.grid-cols-5 {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Force single column for md:grid-cols-3 on mobile */
+  .grid.md\\:grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Force single column for any grid with multiple columns */
+  div[class*="grid-cols-"] {
+    grid-template-columns: 1fr !important;
+  }
+  
   /* Mobile responsive text sizing */
   .mobile-text-sm {
     font-size: 0.875rem !important;
