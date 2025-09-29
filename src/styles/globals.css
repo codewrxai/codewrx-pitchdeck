@@ -482,6 +482,13 @@ html {
     border: 2px solid red !important;
   }
   
+  /* Target specific slide classes */
+  .mobile-grid-1 {
+    grid-template-columns: 1fr !important;
+    border: 3px solid blue !important;
+  }
+  
+  
   /* Override specific grid layouts on mobile */
   .grid.grid-cols-3,
   .grid.grid-cols-4,
