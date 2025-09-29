@@ -412,6 +412,18 @@ html {
 
 /* Mobile-specific improvements */
 @media (max-width: 640px) {
+  /* Ensure full viewport height */
+  html, body {
+    height: 100vh !important;
+    overflow-x: hidden !important;
+  }
+  
+  #root {
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
   /* Improve touch targets */
   button, [role="button"] {
     min-height: 44px;
@@ -421,25 +433,31 @@ html {
   /* Mobile responsive main container */
   main {
     padding-top: 3rem !important;
-    padding-bottom: 4rem !important;
+    padding-bottom: 0 !important;
     min-height: 100vh !important;
+    height: 100vh !important;
   }
   
   /* Mobile responsive slide container */
   .slide-container {
-    aspect-ratio: 4/3 !important;
+    aspect-ratio: unset !important;
     padding: 0.5rem !important;
     border-radius: 0.5rem !important;
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0 !important;
     overflow-y: auto !important;
-    max-height: calc(100vh - 8rem) !important;
+    height: calc(100vh - 6rem) !important;
     width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
   
   /* Mobile responsive slide content */
   .slide-container > div {
-    height: auto !important;
-    min-height: auto !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
   
   /* Mobile responsive header */
@@ -471,7 +489,7 @@ html {
     padding-top: 0.25rem !important;
     padding-bottom: 0.25rem !important;
     position: fixed !important;
-    bottom: 2.5rem !important;
+    bottom: 2rem !important;
     left: 0 !important;
     right: 0 !important;
     background: rgba(255, 255, 255, 0.95) !important;
