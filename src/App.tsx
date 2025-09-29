@@ -47,12 +47,6 @@ export default function CODEWRXInvestorPitch() {
       component: SolutionSlide
     },
     {
-      id: 'product-promise',
-      title: 'Product Promise',
-      subtitle: 'Develop, Port and Deploy Web Games with AI Speed',
-      component: ProductPromiseSlide
-    },
-    {
       id: 'product',
       title: 'Product',
       subtitle: 'CodeWRX Hub - Beautiful 3D Games Platform',
@@ -65,58 +59,16 @@ export default function CODEWRXInvestorPitch() {
       component: DemosSlide
     },
     {
-      id: 'global-market',
-      title: 'Global Web Browser Market Size',
-      subtitle: 'Massive Growth Opportunity',
-      component: GlobalMarketSlide
-    },
-    {
       id: 'business-model-detailed',
-      title: 'Business Model - B2C & B2B',
+      title: 'Business Model',
       subtitle: 'Free to Start, Revenue Share Success',
       component: BusinessModelSlide
-    },
-    {
-      id: 'pricing',
-      title: 'Pricing',
-      subtitle: 'Scalable Revenue Model',
-      component: PricingSlide
-    },
-    {
-      id: 'platform-fees',
-      title: 'Platform Fees Comparison',
-      subtitle: 'Industry-Low Platform Fees',
-      component: PlatformFeesComparisonSlide
-    },
-    {
-      id: 'traction-detailed',
-      title: 'Traction',
-      subtitle: 'Early Adoption & Market Validation',
-      component: TractionSlide
-    },
-    {
-      id: 'competitive-landscape',
-      title: 'Competitive Landscape',
-      subtitle: 'Market Position & Opportunity',
-      component: CompetitiveLandscapeSlide
-    },
-    {
-      id: 'team-detailed',
-      title: 'Team',
-      subtitle: 'Experienced Leadership in AI & Gaming',
-      component: TeamSlide
     },
     {
       id: 'fundraising',
       title: 'Fundraising',
       subtitle: 'Raising $1.5M Pre-Seed',
       component: FundraisingSlide
-    },
-    {
-      id: 'product-roadmap',
-      title: 'Product Roadmap',
-      subtitle: 'Strategic Development Plan',
-      component: ProductRoadmapSlide
     },
     {
       id: 'contact',

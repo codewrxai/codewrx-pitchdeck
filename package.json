@@ -1,7 +1,7 @@
 
   {
-      "name": "CDWRX Investor Pitch Presentation",
-      "version": "0.1.0",
+      "name": "CDWRX Mini Pitch Deck",
+      "version": "1.0.0-mini",
       "private": true,
       "dependencies": {
           "@radix-ui/react-accordion": "^1.2.3",
