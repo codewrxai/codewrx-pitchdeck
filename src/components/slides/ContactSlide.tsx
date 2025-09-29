@@ -48,8 +48,8 @@ export function ContactSlide({
           }}
         >
           {!logoLoaded && (
-            <div className="w-full h-full codewrx-gradient rounded-full flex items-center justify-center shadow-xl animate-pulse">
-              <div className="text-white text-lg font-bold opacity-50">
+            <div className="w-full h-full mobile-contact-logo codewrx-gradient rounded-full flex items-center justify-center shadow-xl animate-pulse">
+              <div className="text-white text-lg mobile-contact-text font-bold opacity-50">
                 CODEWRX
               </div>
             </div>
@@ -57,7 +57,7 @@ export function ContactSlide({
           <ImageWithFallback
             src={codewrxLogo}
             alt="CODEWRX Logo"
-            className={`w-full h-full object-contain transition-opacity duration-500 ${logoLoaded ? 'opacity-100' : 'opacity-0'}`}
+            className={`w-full h-full mobile-contact-logo object-contain transition-opacity duration-500 ${logoLoaded ? 'opacity-100' : 'opacity-0'}`}
             onLoad={() => setLogoLoaded(true)}
             loading="eager"
           />

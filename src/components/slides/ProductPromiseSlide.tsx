@@ -25,7 +25,7 @@ export function ProductPromiseSlide() {
         </div>
       </Card>
       
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-6 mobile-single-column">
         <Card className="codewrx-card p-6 border-chart-2/20">
           <div className="text-center space-y-3">
             <div className="w-12 h-12 bg-chart-2/10 rounded-xl flex items-center justify-center mx-auto">

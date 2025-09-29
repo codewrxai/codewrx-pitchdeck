@@ -35,9 +35,9 @@ export function CoverSlide({ logoVerticalOffset = 0, headerVerticalOffset = 0 }:
           style={{ transform: `translateY(${logoVerticalOffset}px)` }}
         >
           {!logoLoaded && (
-            <div className="w-[500px] h-[500px] flex items-center justify-center">
-              <div className="w-96 h-96 codewrx-gradient rounded-full flex items-center justify-center shadow-2xl animate-pulse">
-                <div className="text-white text-6xl font-bold tracking-wider opacity-50">
+            <div className="w-[500px] h-[500px] mobile-logo-container flex items-center justify-center">
+              <div className="w-96 h-96 mobile-logo-inner codewrx-gradient rounded-full flex items-center justify-center shadow-2xl animate-pulse">
+                <div className="text-white text-6xl mobile-logo-text font-bold tracking-wider opacity-50">
                   CODEWRX
                 </div>
               </div>
@@ -46,7 +46,7 @@ export function CoverSlide({ logoVerticalOffset = 0, headerVerticalOffset = 0 }:
           <ImageWithFallback
             src={codewrxLogo}
             alt="CODEWRX Logo"
-            className={`w-[500px] h-[500px] object-contain transition-opacity duration-500 ${logoLoaded ? 'opacity-100' : 'opacity-0'}`}
+            className={`w-[500px] h-[500px] mobile-logo-container object-contain transition-opacity duration-500 ${logoLoaded ? 'opacity-100' : 'opacity-0'}`}
             onLoad={() => setLogoLoaded(true)}
             loading="eager"
           />

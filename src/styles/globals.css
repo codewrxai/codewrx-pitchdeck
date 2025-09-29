@@ -462,6 +462,16 @@ html {
     grid-template-columns: repeat(2, 1fr) !important;
   }
   
+  /* Mobile responsive md:grid-cols-3 to single column */
+  .mobile-single-column {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Mobile responsive md:grid-cols-2 to single column */
+  .mobile-single-column-2 {
+    grid-template-columns: 1fr !important;
+  }
+  
   /* Mobile responsive text sizing */
   .mobile-text-sm {
     font-size: 0.875rem !important;
@@ -498,5 +508,33 @@ html {
   .mobile-icon-md {
     width: 1.25rem !important;
     height: 1.25rem !important;
+  }
+  
+  /* Mobile responsive logo sizing for CoverSlide and ContactSlide */
+  .mobile-logo-container {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+  
+  .mobile-logo-inner {
+    width: 80% !important;
+    height: 80% !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
+  }
+  
+  .mobile-logo-text {
+    font-size: 2rem !important;
+  }
+  
+  .mobile-contact-logo {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+  
+  .mobile-contact-text {
+    font-size: 1.5rem !important;
   }
 }
