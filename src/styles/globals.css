@@ -451,7 +451,7 @@ html {
     width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
-    padding-bottom: 4rem !important;
+    padding-bottom: 6rem !important;
   }
   
   /* Mobile responsive slide content */
@@ -461,7 +461,7 @@ html {
     flex: 1 !important;
     display: flex !important;
     flex-direction: column !important;
-    padding-bottom: 2rem !important;
+    padding-bottom: 4rem !important;
   }
   
   /* Mobile responsive header */
