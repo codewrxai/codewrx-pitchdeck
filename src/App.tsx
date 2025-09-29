@@ -49,24 +49,6 @@ export default function CODEWRXInvestorPitch() {
       component: SolutionSlide
     },
     {
-      id: 'product',
-      title: 'Product',
-      subtitle: 'CodeWRX Hub - Beautiful 3D Games Platform',
-      component: ProductSlide
-    },
-    {
-      id: 'demos',
-      title: 'Demos',
-      subtitle: 'See CODEWRX in Action',
-      component: DemosSlide
-    },
-    {
-      id: 'business-model-detailed',
-      title: 'Business Model',
-      subtitle: 'Free to Start, Revenue Share Success',
-      component: BusinessModelSlide
-    },
-    {
       id: 'fundraising',
       title: 'Fundraising',
       subtitle: 'Raising $1.5M Pre-Seed',
@@ -198,7 +180,7 @@ export default function CODEWRXInvestorPitch() {
 
         {/* Navigation Controls */}
         <div className="max-w-6xl mx-auto px-6 py-6 navigation-controls">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center gap-4">
             <Button 
               variant="outline" 
               onClick={prevSlide}
