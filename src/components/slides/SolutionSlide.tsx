@@ -6,85 +6,85 @@ export function SolutionSlide() {
   const [videoError, setVideoError] = useState(false);
 
   return (
-    <div className="h-full flex flex-col space-y-3">
+    <div className="h-full flex flex-col space-y-2 sm:space-y-3">
       {/* Compact Header */}
       <div className="text-center space-y-1">
         <div className="flex items-center justify-center gap-2 mb-1">
-          <div className="w-8 h-8 codewrx-gradient rounded-lg flex items-center justify-center">
-            <CheckCircle className="w-4 h-4 text-white" />
+          <div className="w-6 h-6 sm:w-8 sm:h-8 codewrx-gradient rounded-lg flex items-center justify-center">
+            <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
           </div>
-          <h2 className="text-xl font-bold tracking-tight">
+          <h2 className="text-lg sm:text-xl font-bold tracking-tight">
             <span className="codewrx-text-gradient">The CodeWRX Solution</span>
           </h2>
         </div>
-        <p className="text-sm text-muted-foreground max-w-3xl mx-auto">
+        <p className="text-xs sm:text-sm text-muted-foreground max-w-3xl mx-auto px-4">
           CodeWRX enables game developers to build or convert their existing Steam PC and mobile games to play instantly on the web
         </p>
       </div>
       
       {/* Compact Main Hero Section */}
-      <div className="flex-1 grid grid-cols-5 gap-3">
+      <div className="flex-1 grid grid-cols-1 sm:grid-cols-5 gap-3">
         {/* Left Column - Game Conversion Flow */}
-        <div className="col-span-2 space-y-4 h-full flex flex-col">
-          <Card className="codewrx-card p-5 flex-1">
-            <div className="space-y-4 h-full flex flex-col justify-center">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-chart-4/10 rounded-xl flex items-center justify-center">
-                  <Monitor className="w-5 h-5 text-chart-4" />
+        <div className="sm:col-span-2 space-y-3 sm:space-y-4 h-full flex flex-col">
+          <Card className="codewrx-card p-3 sm:p-5 flex-1">
+            <div className="space-y-3 sm:space-y-4 h-full flex flex-col justify-center">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-chart-4/10 rounded-xl flex items-center justify-center">
+                  <Monitor className="w-4 h-4 sm:w-5 sm:h-5 text-chart-4" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold">Steam PC Games</h3>
-                  <p className="text-sm text-muted-foreground">Existing desktop titles</p>
+                  <h3 className="text-xs sm:text-sm font-semibold">Steam PC Games</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">Existing desktop titles</p>
                 </div>
               </div>
-              <div className="flex items-center justify-center py-3">
-                <ArrowRight className="w-6 h-6 text-chart-1" />
+              <div className="flex items-center justify-center py-2 sm:py-3">
+                <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6 text-chart-1" />
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-chart-2/10 rounded-xl flex items-center justify-center">
-                  <Smartphone className="w-5 h-5 text-chart-2" />
-                </div>
-                <div>
-                  <h3 className="text-sm font-semibold">Mobile Games</h3>
-                  <p className="text-sm text-muted-foreground">iOS & Android apps</p>
-                </div>
-              </div>
-              <div className="flex items-center justify-center py-3">
-                <ArrowRight className="w-6 h-6 text-chart-1" />
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 codewrx-gradient rounded-xl flex items-center justify-center">
-                  <Globe className="w-5 h-5 text-white" />
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-chart-2/10 rounded-xl flex items-center justify-center">
+                  <Smartphone className="w-4 h-4 sm:w-5 sm:h-5 text-chart-2" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold">Instant Web Play</h3>
-                  <p className="text-sm text-muted-foreground">No downloads required</p>
+                  <h3 className="text-xs sm:text-sm font-semibold">Mobile Games</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">iOS & Android apps</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center py-2 sm:py-3">
+                <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6 text-chart-1" />
+              </div>
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 codewrx-gradient rounded-xl flex items-center justify-center">
+                  <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xs sm:text-sm font-semibold">Instant Web Play</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">No downloads required</p>
                 </div>
               </div>
             </div>
           </Card>
           
-          <Card className="codewrx-card p-4 border-chart-1/20 flex-1">
-            <div className="space-y-3 h-full flex flex-col">
+          <Card className="codewrx-card p-3 sm:p-4 border-chart-1/20 flex-1">
+            <div className="space-y-2 sm:space-y-3 h-full flex flex-col">
               <div className="flex items-center gap-2">
-                <Zap className="w-5 h-5 text-chart-1" />
-                <h4 className="text-sm font-semibold">Key Benefits</h4>
+                <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-chart-1" />
+                <h4 className="text-xs sm:text-sm font-semibold">Key Benefits</h4>
               </div>
-              <div className="space-y-3 text-sm flex-1 flex flex-col justify-center">
+              <div className="space-y-2 sm:space-y-3 text-xs sm:text-sm flex-1 flex flex-col justify-center">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-chart-1" />
+                  <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-chart-1" />
                   <span>Convert existing games</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-chart-1" />
+                  <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-chart-1" />
                   <span>Instant browser playback</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-chart-1" />
+                  <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-chart-1" />
                   <span>No storage limitations</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-chart-1" />
+                  <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-chart-1" />
                   <span>Cross-platform compatible</span>
                 </div>
               </div>
@@ -93,12 +93,12 @@ export function SolutionSlide() {
         </div>
 
         {/* Center/Right - Hero Gameplay Demo */}
-        <div className="col-span-3">
-          <Card className="codewrx-card h-full p-3 relative overflow-hidden">
+        <div className="sm:col-span-3">
+          <Card className="codewrx-card h-full p-2 sm:p-3 relative overflow-hidden">
             <div className="absolute inset-0 codewrx-gradient opacity-5"></div>
             <div className="relative h-full flex flex-col">
               <div className="text-center mb-2">
-                <h3 className="text-sm font-semibold mb-1">Sophisticated 3D Web Gaming</h3>
+                <h3 className="text-xs sm:text-sm font-semibold mb-1">Sophisticated 3D Web Gaming</h3>
                 <p className="text-xs text-muted-foreground">
                   High-quality games that run instantly in any browser
                 </p>

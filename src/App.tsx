@@ -206,26 +206,26 @@ export default function CODEWRXInvestorPitch() {
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/30">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-lg border-b border-border/50">
-        <div className="max-w-6xl mx-auto px-6 py-4">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <div className="w-10 h-10 codewrx-gradient rounded-xl flex items-center justify-center">
-                <div className="text-white font-bold text-lg">C</div>
+            <div className="flex items-center space-x-2 sm:space-x-4">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 codewrx-gradient rounded-xl flex items-center justify-center">
+                <div className="text-white font-bold text-sm sm:text-lg">C</div>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="text-xl font-bold tracking-tight">
+              <div className="flex items-center space-x-1 sm:space-x-2">
+                <div className="text-lg sm:text-xl font-bold tracking-tight">
                   <span className="codewrx-text-gradient">CODEWRX</span>
                 </div>
-                <span className="text-muted-foreground">•</span>
-                <span className="text-lg font-medium text-foreground">Investor Pitch</span>
+                <span className="text-muted-foreground hidden sm:inline">•</span>
+                <span className="text-sm sm:text-lg font-medium text-foreground hidden sm:inline">Investor Pitch</span>
               </div>
             </div>
-            <div className="flex items-center gap-3 px-4 py-2 bg-background/50 backdrop-blur-sm rounded-lg border">
-              <span className="text-sm font-medium text-muted-foreground">
+            <div className="flex items-center gap-2 sm:gap-3 px-2 sm:px-4 py-1.5 sm:py-2 bg-background/50 backdrop-blur-sm rounded-lg border">
+              <span className="text-xs sm:text-sm font-medium text-muted-foreground">
                 {currentSlide + 1} / {slides.length}
               </span>
-              <Separator orientation="vertical" className="h-4" />
-              <span className="text-sm font-medium text-foreground">
+              <Separator orientation="vertical" className="h-3 sm:h-4" />
+              <span className="text-xs sm:text-sm font-medium text-foreground hidden sm:inline">
                 {currentSlideData.title}
               </span>
             </div>
@@ -234,33 +234,34 @@ export default function CODEWRXInvestorPitch() {
       </header>
 
       {/* Main Content */}
-      <main className="pt-24">
-        {/* Slide Content - 3:2 Aspect Ratio Container */}
-        <div className="max-w-6xl mx-auto px-6 py-8">
-          <div className={`aspect-[3/2] p-8 rounded-2xl ${getSlideBackground(currentSlideData.id)}`}>
+      <main className="pt-20 sm:pt-24">
+        {/* Slide Content - Responsive Aspect Ratio Container */}
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-8">
+          <div className={`aspect-[4/3] sm:aspect-[3/2] p-4 sm:p-8 rounded-xl sm:rounded-2xl ${getSlideBackground(currentSlideData.id)}`}>
             <CurrentSlideComponent {...getSlideProps()} />
           </div>
         </div>
 
         {/* Navigation Controls */}
-        <div className="max-w-6xl mx-auto px-6 py-6">
-          <div className="flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
+          <div className="flex items-center justify-between gap-2 sm:gap-4">
             <Button 
               variant="outline" 
               onClick={prevSlide}
               disabled={currentSlide === 0}
-              className="flex items-center gap-2 bg-background/50 backdrop-blur-sm"
+              className="flex items-center gap-1 sm:gap-2 bg-background/50 backdrop-blur-sm text-xs sm:text-sm px-2 sm:px-4 py-1.5 sm:py-2"
             >
-              <ChevronLeft className="w-4 h-4" />
-              Previous
+              <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4" />
+              <span className="hidden sm:inline">Previous</span>
+              <span className="sm:hidden">Prev</span>
             </Button>
             
-            <div className="flex items-center gap-3 px-4 py-2 bg-background/50 backdrop-blur-sm rounded-lg border">
-              <span className="text-sm font-medium text-muted-foreground">
+            <div className="flex items-center gap-2 sm:gap-3 px-2 sm:px-4 py-1.5 sm:py-2 bg-background/50 backdrop-blur-sm rounded-lg border">
+              <span className="text-xs sm:text-sm font-medium text-muted-foreground">
                 {currentSlide + 1} / {slides.length}
               </span>
-              <Separator orientation="vertical" className="h-4" />
-              <span className="text-sm font-medium text-foreground">
+              <Separator orientation="vertical" className="h-3 sm:h-4" />
+              <span className="text-xs sm:text-sm font-medium text-foreground hidden sm:inline">
                 {currentSlideData.title}
               </span>
             </div>
@@ -269,22 +270,23 @@ export default function CODEWRXInvestorPitch() {
               variant="outline" 
               onClick={nextSlide}
               disabled={currentSlide === slides.length - 1}
-              className="flex items-center gap-2 bg-background/50 backdrop-blur-sm"
+              className="flex items-center gap-1 sm:gap-2 bg-background/50 backdrop-blur-sm text-xs sm:text-sm px-2 sm:px-4 py-1.5 sm:py-2"
             >
-              Next
-              <ChevronRight className="w-4 h-4" />
+              <span className="hidden sm:inline">Next</span>
+              <span className="sm:hidden">Next</span>
+              <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
             </Button>
           </div>
         </div>
 
         {/* Slide Indicators */}
-        <div className="max-w-6xl mx-auto px-6 pb-12">
-          <div className="flex justify-center gap-2">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-8 sm:pb-12">
+          <div className="flex justify-center gap-1.5 sm:gap-2">
             {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-200 ${
                   index === currentSlide 
                     ? 'bg-primary scale-125' 
                     : 'bg-muted-foreground/30 hover:bg-muted-foreground/50 hover:scale-110'
