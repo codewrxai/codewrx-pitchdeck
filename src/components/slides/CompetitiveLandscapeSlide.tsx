@@ -72,7 +72,7 @@ export function CompetitiveLandscapeSlide() {
 
       {/* Featured Browser Technology Capabilities - Moved to Top */}
       <Card className="codewrx-card p-4 bg-gradient-to-r from-chart-1/10 via-chart-2/5 to-chart-4/10 border-chart-1/20">
-        <div className="grid grid-cols-4 gap-4 items-center">
+        <div className="grid grid-cols-4 gap-4 items-center mobile-single-column">
           {/* Browser Tech Header */}
           <div className="space-y-2">
             <div className="flex items-center gap-2">
@@ -114,7 +114,7 @@ export function CompetitiveLandscapeSlide() {
 
       {/* Competitor Analysis - Compact Cards */}
       <div className="flex-1">
-        <div className="grid grid-cols-3 gap-4 h-full">
+        <div className="grid grid-cols-3 gap-4 h-full mobile-single-column">
           {competitors.map((competitor, index) => (
             <Card key={index} className={`codewrx-card h-full border-${competitor.borderColor}/20`}>
               <div className="p-3 h-full flex flex-col">
