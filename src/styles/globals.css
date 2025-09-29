@@ -436,6 +436,8 @@ html {
     padding-bottom: 0 !important;
     min-height: 100vh !important;
     height: 100vh !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
   }
   
   /* Mobile responsive slide container */
@@ -444,20 +446,22 @@ html {
     padding: 0.5rem !important;
     border-radius: 0.5rem !important;
     margin-bottom: 0 !important;
-    overflow-y: auto !important;
+    overflow-y: visible !important;
     height: calc(100vh - 6rem) !important;
     width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
+    padding-bottom: 4rem !important;
   }
   
   /* Mobile responsive slide content */
   .slide-container > div {
-    height: 100% !important;
-    min-height: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
     flex: 1 !important;
     display: flex !important;
     flex-direction: column !important;
+    padding-bottom: 2rem !important;
   }
   
   /* Mobile responsive header */
@@ -554,15 +558,9 @@ html {
     gap: 1rem !important;
   }
   
-  /* Debug: Add visible border to mobile grids */
-  .grid {
-    border: 2px solid red !important;
-  }
-  
   /* Target specific slide classes */
   .mobile-grid-1 {
     grid-template-columns: 1fr !important;
-    border: 3px solid blue !important;
     gap: 1rem !important;
   }
   
